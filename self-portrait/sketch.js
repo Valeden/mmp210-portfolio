@@ -1,9 +1,8 @@
+let frameCountR = 0;
+
 function setup() {
   createCanvas(400, 400);
   background('#DD8027');
-}
-
-function draw() {
   fill('#E1B28C');
   strokeWeight(2);
   ellipse(200, 200, 260, 260);
@@ -39,4 +38,27 @@ function draw() {
   ellipse(310, 140, 40, 40);
   ellipse(320, 160, 40, 40);
   rect(150, 250, 100, 10);
+  
+}
+
+function draw() {
+  let Rmap = map(frameCountR, 0, 500, 0, 255);
+  let Gmap = map(frameCount, 0, 300, 0, 255);
+  let Bmap = map(frameCount, 0, 300, 0, 255);
+  if(frameCount >= 300)
+  {
+    frameCount = 0;
+  }
+  
+    if(frameCountR >= 500)
+  {
+    frameCount = 0;
+  }
+  frameCountR++;
+  fill(Rmap, Gmap, Bmap);
+  strokeWeight(4);
+  rect(135, 160, 50, 30, 5);
+  rect(215, 160, 50, 30, 5);
+  
+  
 }
