@@ -41,15 +41,15 @@ function setup() {
 
 function draw() {
     background(155, 155, 155);
-    playerSprite.debug = mouseIsPressed;
-    base.debug = mouseIsPressed;
-    coin.debug = mouseIsPressed;
-    platform[0].debug = mouseIsPressed;
-    platform[1].debug = mouseIsPressed;
-    platform[2].debug = mouseIsPressed;
-    platform[3].debug = mouseIsPressed;
-    platform[4].debug = mouseIsPressed;
-    platform[5].debug = mouseIsPressed;
+//     playerSprite.debug = mouseIsPressed;
+//     base.debug = mouseIsPressed;
+//     coin.debug = mouseIsPressed;
+//     platform[0].debug = mouseIsPressed;
+//     platform[1].debug = mouseIsPressed;
+//     platform[2].debug = mouseIsPressed;
+//     platform[3].debug = mouseIsPressed;
+//     platform[4].debug = mouseIsPressed;
+//     platform[5].debug = mouseIsPressed;
     playerSprite.velocity.y += gravity;
     if (playerSprite.collide(base)) {
         playerSprite.velocity.y = 0;
