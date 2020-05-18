@@ -1,6 +1,4 @@
 var platform = [];
-var platformCoordX = [];
-var platformCoordY = [];
 var gravity = 1;
 var jump = 15;
 var coinCount = 0;
